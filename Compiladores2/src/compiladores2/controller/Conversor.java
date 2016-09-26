@@ -5,7 +5,7 @@ import compiladores2.model.Estado;
 import compiladores2.model.Simbolo;
 import java.util.Stack;
 
-public class Conversor {
+public class Conversor{
 
     public String converter(String exp) {
         Stack<Character> pilha = new Stack<>();

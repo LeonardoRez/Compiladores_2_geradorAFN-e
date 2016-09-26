@@ -38,7 +38,12 @@ public class Estado {
 
     @Override
     public String toString() {
-        return "Q" + ID;
+        String s = "Q" + ID;
+        if(isFinal)
+            s = "*"+s;
+        if(isInicial)
+            s = "->"+s;
+        return s;
     }
 
     public StringProperty toStringProp() {
